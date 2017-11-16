@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "120964675260",
+    "firebase_url": "https://parcels-notification-server.firebaseio.com",
+    "project_id": "parcels-notification-server",
+    "storage_bucket": "parcels-notification-server.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120964675260:android:9362f1963d224de9",
+        "android_client_info": {
+          "package_name": "com.cotans.driverapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120964675260-gsuec96des7vigci50fp3m3g05etg6e5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvMLDBy5A20O-iZWelCnJhQRStbv5LfPw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

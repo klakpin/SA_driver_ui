@@ -1,0 +1,16 @@
+<resources>
+    <string name="login">login</string>
+    <string name="app_name">DriverAppv3</string>
+    <string name="code_content_desc">code input field</string>
+    <string name="code_label_text">Enter confirmation code:</string>
+    <string name="confirmation_screen_text">Enter confirmation code</string>
+    <string name="cs_send_btn">Confirm</string>
+    <string name="bottom_nav_parcels">Parcels</string>
+    <string name="bottom_nav_account">Account</string>
+    <string name="bottom_nav_map">Map</string>
+    <string name="ai_logout">Log out</string>
+    <string name="location_tracking">Online mode</string>
+    <string name="log_out">Log out</string>
+    <string name="notifications">Notifications</string>
+
+</resources>

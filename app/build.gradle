@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+
+android {
+
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.cotans.driverapp"
+        minSdkVersion 23
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-messaging:11.6.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:26.1.0'
+
+    testCompile 'junit:junit:4.12'
+
+    // required if you want to use Mockito for unit tests
+    testCompile 'org.mockito:mockito-core:2.7.22'
+    // required if you want to use Mockito for Android tests
+    androidTestCompile 'org.mockito:mockito-android:2.7.22'
+
+    // Google maps
+    //noinspection GradleDependency
+    implementation 'com.google.android.gms:play-services-maps:11.6.0'
+
+    // Room library
+    implementation "android.arch.persistence.room:runtime:1.0.0"
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0"
+    compile "android.arch.persistence.room:rxjava2:1.0.0"
+
+    // ButterKnife
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    // Retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    // Scalars for retrofit plain responces handling, https://stackoverflow.com/questions/36523972/how-to-get-string-response-from-retrofit2
+    compile 'com.squareup.retrofit2:converter-scalars:2.1.0'
+
+    // Dagger 2
+    compile 'com.google.dagger:dagger:2.10'
+    annotationProcessor "com.google.dagger:dagger-compiler:2.10"
+
+    // JSON Converter
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    // Rxjava
+    compile 'io.reactivex.rxjava2:rxjava:2.0.6'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    // WebSockets
+    compile 'com.neovisionaries:nv-websocket-client:2.3'
+
+    // Volley Http service
+    compile 'com.android.volley:volley:1.0.0'
+
+    // CardView & RecyclerView
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+
+    // Material edittext https://github.com/DreaminginCodeZH/MaterialProgrefssBar
+    compile 'me.zhanghai.android.materialprogressbar:library:1.4.2'
+
+    // Pretty Android charts for statistics https://github.com/PhilJay/MPAndroidChart
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+
+    // EventBus https://github.com/greenrobot/EventBus
+    compile 'org.greenrobot:eventbus:3.1.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

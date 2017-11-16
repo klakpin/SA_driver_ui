@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#dd3322</color>
+
+    <color name="c">#54ACEB</color>
+    <color name="b">#56ACED</color>
+    <color name="d">#97CFF6</color>
+
+    <color name="loginDrawableColor">#646464</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="bloody">#00ce0707</color>
+    <color name="colorGray">#00b7b7b7</color>
+
+</resources>
